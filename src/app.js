@@ -25,7 +25,8 @@ app.use(express.json());
 app.use("/api/auth", require("./routes/auth-routes"));
 app.use("/api/users", require("./routes/user-routes"));
 app.use("/api/products", require("./routes/product-routes"));
-
+app.use("/api/carts", require("./routes/cart-routes"));
+app.use("/api/orders", require("./routes/order-routes"));
 // listen server on port 5000
 app.listen(process.env.APP_PORT || 5000, () => {
   console.log(`listening on port ${process.env.APP_PORT}`);
