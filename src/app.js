@@ -19,12 +19,10 @@ mongoose
   });
 
 // express routes
-const usersRoutes = require("./routes/users-routes");
-// const authRoutes = require("./routes/auth-routes");
 
 app.use(express.json());
 // app.use(express.urlencoded({ extended: true }));
-app.use("/api/users", usersRoutes);
+// app.use("/api/users", usersRoutes);
 
 // listen server on port 5000
 app.listen(process.env.APP_PORT || 5000, () => {
