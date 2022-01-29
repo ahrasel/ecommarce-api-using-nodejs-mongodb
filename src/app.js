@@ -24,6 +24,7 @@ app.use(express.json());
 // app.use(express.urlencoded({ extended: true }));
 app.use("/api/auth", require("./routes/auth-routes"));
 app.use("/api/users", require("./routes/user-routes"));
+app.use("/api/products", require("./routes/product-routes"));
 
 // listen server on port 5000
 app.listen(process.env.APP_PORT || 5000, () => {
